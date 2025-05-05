@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="web_author" content="Stanislav Bychkar">
+    <title>ClubFinder</title>
+    <link rel="icon" type="image/x-icon" href="img/CF-logo.png">
+    <link rel="preload" href="/fonts/EricaOne-Regular.ttf" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/Montserrat-VariableFont_wght.ttf" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/11.1.0/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/11.1.0/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/11.1.0/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/11.1.0/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/11.1.0/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/11.1.0/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/11.1.0/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/11.1.0/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/11.1.0/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/11.1.0/firebase-performance-compat.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.8.1/tsparticles.confetti.bundle.min.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <!-- Added js -->
+    <script defer src="app.js"></script>
+  </head>
+  <body class="body-landing">
+    <h1 class="h1-landing appear-first">ClubFinder</h1>
+      <div id="quiz-container" class="landing-container">
+        <div id="question-container">
+          <p id="question-text" class="description-landing appear-third">With nearly a hundred student-led clubs at Bellevue College, there's something for everyone. Take the one minute quiz and find your community!</p>
+          <div id="answers-container"></div>
+        </div>
+        <button class="landing-button appear-second">Start Matching!</button>
+        <div class="div-credit appear-third">
+          <div class="credit-left">Developed by</div>
+          <div class="credit-right">
+            <img src="img/bc-se-logo-black.png" alt="BC Student Engagement" class="bs-se-img-landing">
+          </div>
+        </div>
+      </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const loadEl = document.querySelector('#load');
+      });
+    </script>
+  </body>
+</html>
